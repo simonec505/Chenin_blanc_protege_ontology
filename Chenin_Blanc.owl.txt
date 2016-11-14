@@ -1,0 +1,2586 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY wwww "http://wwww.wine.com#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2006/12/owl2-xml#"
+     xml:base="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:wwww="http://wwww.wine.com#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     URI="http://wwww.wine.com">
+    <Annotation annotationURI="&rdfs;comment">
+        <Constant
+            >An ontology capturing the relationship between the sensory properties and their associated styles.</Constant>
+    </Annotation>
+    <SubClassOf>
+        <Class URI="&wwww;AggressiveMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;AggressiveMouthfeel"/>
+        <Class URI="&wwww;CreamyMouthfeel"/>
+        <Class URI="&wwww;DisjointedMouthfeel"/>
+        <Class URI="&wwww;HarshMouthfeel"/>
+        <Class URI="&wwww;InsipidMouthfeel"/>
+        <Class URI="&wwww;IntegratedMouthfeel"/>
+        <Class URI="&wwww;NeutralMouthfeel"/>
+        <Class URI="&wwww;RichMouthfeel"/>
+        <Class URI="&wwww;RoundMouthfeel"/>
+        <Class URI="&wwww;SuppleMouthfeel"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;AlmondAroma"/>
+        <Class URI="&wwww;NuttyAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;AlmondAroma"/>
+        <Class URI="&wwww;HazelnutAroma"/>
+        <Class URI="&wwww;MarzipanAroma"/>
+        <Class URI="&wwww;MixedNutsAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;AppleBlossomAroma"/>
+        <Class URI="&wwww;FloralAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;AppleBlossomAroma"/>
+        <Class URI="&wwww;ElderFlowerAroma"/>
+        <Class URI="&wwww;HoneySuckleAroma"/>
+        <Class URI="&wwww;OrangeBlossomAroma"/>
+        <Class URI="&wwww;WildFlowerAroma"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class URI="&wwww;AppleBlossomAroma"/>
+        <Class URI="&wwww;HoneySuckleAroma"/>
+        <Class URI="&wwww;OrangeBlossomAroma"/>
+        <Class URI="&wwww;WildFlowerAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;AromaAttributes"/>
+        <Class URI="&wwww;SensoryAttributes"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;AromaAttributes"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+        <Class URI="&wwww;TactileAttributes"/>
+        <Class URI="&wwww;TasteAttributes"/>
+        <Class URI="&wwww;VisualAttributes"/>
+    </DisjointClasses>
+    <EquivalentClasses>
+        <Class URI="&wwww;Astringency"/>
+        <ObjectUnionOf>
+            <Class URI="&wwww;DryAstringency"/>
+            <Class URI="&wwww;ParchingAstringency"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;Astringency"/>
+        <Class URI="&wwww;TactileAttributes"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;Astringency"/>
+        <Class URI="&wwww;Body"/>
+        <Class URI="&wwww;MouthCoat"/>
+        <Class URI="&wwww;SurfaceTexture"/>
+        <Class URI="&wwww;ViscosityValuePartition"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;BabyOilCoat"/>
+        <Class URI="&wwww;MouthCoat"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;BabyOilCoat"/>
+        <Class URI="&wwww;OliveOilCoat"/>
+        <Class URI="&wwww;SunflowerOilCoat"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;BakedAppleAroma"/>
+        <Class URI="&wwww;BakedFruitAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;BakedAppleAroma"/>
+        <Class URI="&wwww;BakedApricotAroma"/>
+        <Class URI="&wwww;BakedPearAroma"/>
+        <Class URI="&wwww;BakedPineappleAroma"/>
+        <Class URI="&wwww;BruisedAppleAroma"/>
+        <Class URI="&wwww;QuinceAroma"/>
+        <Class URI="&wwww;StewedFruitAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;BakedApricotAroma"/>
+        <Class URI="&wwww;BakedFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;BakedFruitAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;BakedFruitAroma"/>
+        <Class URI="&wwww;CitrusAroma"/>
+        <Class URI="&wwww;DriedFruitsAroma"/>
+        <Class URI="&wwww;DriedVegetativeAroma"/>
+        <Class URI="&wwww;FloralAroma"/>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+        <Class URI="&wwww;MineralAroma"/>
+        <Class URI="&wwww;NaturalSubstanceAroma"/>
+        <Class URI="&wwww;NuttyAroma"/>
+        <Class URI="&wwww;SpicyAroma"/>
+        <Class URI="&wwww;StoneFruitAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+        <Class URI="&wwww;WoodAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;BakedPearAroma"/>
+        <Class URI="&wwww;BakedFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;BakedPineappleAroma"/>
+        <Class URI="&wwww;BakedFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;BeeswaxAroma"/>
+        <Class URI="&wwww;NaturalSubstanceAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;BeeswaxAroma"/>
+        <Class URI="&wwww;LanolinAroma"/>
+        <Class URI="&wwww;WaxyAroma"/>
+        <Class URI="&wwww;WetWoolAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;BiscuitAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;BiscuitAroma"/>
+        <Class URI="&wwww;BotrytisAroma"/>
+        <Class URI="&wwww;ButterscotchAroma"/>
+        <Class URI="&wwww;CaramelAroma"/>
+        <Class URI="&wwww;CustardAroma"/>
+        <Class URI="&wwww;HoneyAroma"/>
+        <Class URI="&wwww;MarmaladeAroma"/>
+        <Class URI="&wwww;OatmealAroma"/>
+        <Class URI="&wwww;VanillaAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;BitterTaste"/>
+        <Class URI="&wwww;TasteAttributes"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;BitterTaste"/>
+        <Class URI="&wwww;CB_grapeTaste"/>
+        <Class URI="&wwww;GoodAcidicTaste"/>
+        <Class URI="&wwww;SavouryTaste"/>
+        <Class URI="&wwww;SweetTaste"/>
+    </DisjointClasses>
+    <EquivalentClasses>
+        <Class URI="&wwww;Body"/>
+        <ObjectUnionOf>
+            <Class URI="&wwww;Full-bodied"/>
+            <Class URI="&wwww;Light-bodied"/>
+            <Class URI="&wwww;Medium-bodied"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;Body"/>
+        <Class URI="&wwww;TactileAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;BotrytisAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;BruisedAppleAroma"/>
+        <Class URI="&wwww;BakedFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;ButterscotchAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;CB_grapeTaste"/>
+        <Class URI="&wwww;TasteAttributes"/>
+    </SubClassOf>
+    <Declaration>
+        <Class URI="&wwww;CB_grapeTaste"/>
+    </Declaration>
+    <SubClassOf>
+        <Class URI="&wwww;CaramelAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;ChalkyAroma"/>
+        <Class URI="&wwww;MineralAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;ChalkyAroma"/>
+        <Class URI="&wwww;DustyAroma"/>
+        <Class URI="&wwww;FlintyAroma"/>
+        <Class URI="&wwww;SteelyAroma"/>
+        <Class URI="&wwww;StonyAroma"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class URI="&wwww;CheninBlanc"/>
+        <Class URI="&wwww;SensoryAttributes"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;CinnamonAroma"/>
+        <Class URI="&wwww;SpicyAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;CinnamonAroma"/>
+        <Class URI="&wwww;GingerAroma"/>
+        <Class URI="&wwww;LemonPepperAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;CitrusAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;CookedVegetablesAroma"/>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;CookedVegetablesAroma"/>
+        <Class URI="&wwww;FennelAroma"/>
+        <Class URI="&wwww;GrassAroma"/>
+        <Class URI="&wwww;GreenPepperAroma"/>
+        <Class URI="&wwww;HerbaceousAroma"/>
+        <Class URI="&wwww;HerbalAroma"/>
+        <Class URI="&wwww;KarooScrubAroma"/>
+        <Class URI="&wwww;LeavesAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;CreamyMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;CustardAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;DarkIntensity"/>
+        <Class URI="&wwww;Intensity"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;DarkIntensity"/>
+        <Class URI="&wwww;PaleIntensity"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;DisjointedMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;DriedAppleAroma"/>
+        <Class URI="&wwww;DriedFruitsAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;DriedAppleAroma"/>
+        <Class URI="&wwww;DriedApricotAroma"/>
+        <Class URI="&wwww;DriedPearAroma"/>
+        <Class URI="&wwww;PeachAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;DriedApricotAroma"/>
+        <Class URI="&wwww;DriedFruitsAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;DriedFruitsAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;DriedGrassAroma"/>
+        <Class URI="&wwww;DriedVegetativeAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;DriedGrassAroma"/>
+        <Class URI="&wwww;HayAroma"/>
+        <Class URI="&wwww;StrawAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;DriedPearAroma"/>
+        <Class URI="&wwww;DriedFruitsAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;DriedVegetativeAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;DryAstringency"/>
+        <Class URI="&wwww;Astringency"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;DryAstringency"/>
+        <Class URI="&wwww;ParchingAstringency"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;DrySugarContent"/>
+        <Class URI="&wwww;SugarContentValuePartition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;DrySugarContent"/>
+        <Class URI="&wwww;OffDrySugarContent"/>
+        <Class URI="&wwww;SweetSugarContent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class URI="&wwww;DrySugarContent"/>
+        <Class URI="&wwww;SweetSugarContent"/>
+    </DisjointClasses>
+    <EntityAnnotation>
+        <Class URI="&wwww;DrySugarContent"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >Less than 5g/l residual sugar content</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <SubClassOf>
+        <Class URI="&wwww;DustyAroma"/>
+        <Class URI="&wwww;MineralAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;ElderFlowerAroma"/>
+        <Class URI="&wwww;FloralAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;FennelAroma"/>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;FigAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;FigAroma"/>
+        <Class URI="&wwww;FruitSaladAroma"/>
+        <Class URI="&wwww;GranadillaAroma"/>
+        <Class URI="&wwww;GrapeAroma"/>
+        <Class URI="&wwww;GuavaAroma"/>
+        <Class URI="&wwww;KiwiAroma"/>
+        <Class URI="&wwww;LitchiAroma"/>
+        <Class URI="&wwww;MelonAroma"/>
+        <Class URI="&wwww;PassionFruitAroma"/>
+        <Class URI="&wwww;WatermelonAroma"/>
+    </DisjointClasses>
+    <EquivalentClasses>
+        <Class URI="&wwww;FlavourDrivenCB"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;CheninBlanc"/>
+            <ObjectUnionOf>
+                <ObjectIntersectionOf>
+                    <ObjectUnionOf>
+                        <ObjectIntersectionOf>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                                <Class URI="&wwww;StoneFruitAroma"/>
+                            </ObjectSomeValuesFrom>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                                <Class URI="&wwww;SweetAssociatedAroma"/>
+                            </ObjectSomeValuesFrom>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                                <ObjectUnionOf>
+                                    <Class URI="&wwww;BakedFruitAroma"/>
+                                    <Class URI="&wwww;CitrusAroma"/>
+                                    <Class URI="&wwww;DriedFruitsAroma"/>
+                                    <Class URI="&wwww;DriedVegetativeAroma"/>
+                                    <Class URI="&wwww;FloralAroma"/>
+                                    <Class URI="&wwww;FreshVegetativeAroma"/>
+                                    <Class URI="&wwww;MineralAroma"/>
+                                    <Class URI="&wwww;NaturalSubstanceAroma"/>
+                                    <Class URI="&wwww;TropicalFruitAroma"/>
+                                </ObjectUnionOf>
+                            </ObjectSomeValuesFrom>
+                        </ObjectIntersectionOf>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                            <ObjectUnionOf>
+                                <Class URI="&wwww;BakedFruitAroma"/>
+                                <Class URI="&wwww;CitrusAroma"/>
+                                <Class URI="&wwww;DriedFruitsAroma"/>
+                                <Class URI="&wwww;DriedVegetativeAroma"/>
+                                <Class URI="&wwww;FloralAroma"/>
+                                <Class URI="&wwww;FreshVegetativeAroma"/>
+                                <Class URI="&wwww;MineralAroma"/>
+                                <Class URI="&wwww;StoneFruitAroma"/>
+                                <Class URI="&wwww;TropicalFruitAroma"/>
+                            </ObjectUnionOf>
+                        </ObjectSomeValuesFrom>
+                    </ObjectUnionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;NaturalSubstanceAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;SweetAssociatedAroma"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;BakedFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;CitrusAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                            <Class URI="&wwww;DriedVegetativeAroma"/>
+                            <Class URI="&wwww;FloralAroma"/>
+                            <Class URI="&wwww;FreshVegetativeAroma"/>
+                            <Class URI="&wwww;MineralAroma"/>
+                            <Class URI="&wwww;NaturalSubstanceAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;SweetAssociatedAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;BakedFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;TropicalFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                            <Class URI="&wwww;DriedVegetativeAroma"/>
+                            <Class URI="&wwww;FloralAroma"/>
+                            <Class URI="&wwww;FreshVegetativeAroma"/>
+                            <Class URI="&wwww;MineralAroma"/>
+                            <Class URI="&wwww;NaturalSubstanceAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;SweetAssociatedAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;CitrusAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;DriedFruitsAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;DriedVegetativeAroma"/>
+                            <Class URI="&wwww;FloralAroma"/>
+                            <Class URI="&wwww;FreshVegetativeAroma"/>
+                            <Class URI="&wwww;MineralAroma"/>
+                            <Class URI="&wwww;NaturalSubstanceAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;SweetAssociatedAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;DriedFruitsAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;DriedVegetativeAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;FloralAroma"/>
+                            <Class URI="&wwww;FreshVegetativeAroma"/>
+                            <Class URI="&wwww;MineralAroma"/>
+                            <Class URI="&wwww;NaturalSubstanceAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;SweetAssociatedAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;DriedVegetativeAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;FloralAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                            <Class URI="&wwww;FreshVegetativeAroma"/>
+                            <Class URI="&wwww;MineralAroma"/>
+                            <Class URI="&wwww;NaturalSubstanceAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;SweetAssociatedAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;FloralAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;FreshVegetativeAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                            <Class URI="&wwww;DriedVegetativeAroma"/>
+                            <Class URI="&wwww;MineralAroma"/>
+                            <Class URI="&wwww;NaturalSubstanceAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;SweetAssociatedAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;FreshVegetativeAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;MineralAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                            <Class URI="&wwww;DriedVegetativeAroma"/>
+                            <Class URI="&wwww;FloralAroma"/>
+                            <Class URI="&wwww;NaturalSubstanceAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;SweetAssociatedAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;MineralAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;NaturalSubstanceAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                            <Class URI="&wwww;DriedVegetativeAroma"/>
+                            <Class URI="&wwww;FloralAroma"/>
+                            <Class URI="&wwww;FreshVegetativeAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;SweetAssociatedAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;StoneFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;TropicalFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                            <Class URI="&wwww;DriedVegetativeAroma"/>
+                            <Class URI="&wwww;FloralAroma"/>
+                            <Class URI="&wwww;FreshVegetativeAroma"/>
+                            <Class URI="&wwww;MineralAroma"/>
+                            <Class URI="&wwww;NaturalSubstanceAroma"/>
+                            <Class URI="&wwww;SweetAssociatedAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasTasteType"/>
+                <Class URI="&wwww;SavouryTaste"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;FlavourDrivenCB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasMouthfeelAttribute"/>
+            <Class URI="&wwww;IntegratedMouthfeel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;FlavourDrivenCB"/>
+        <Class URI="&wwww;FruityCB"/>
+    </DisjointClasses>
+    <EntityAnnotation>
+        <Class URI="&wwww;FlavourDrivenCB"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >A Flavour-Driven CB is a CB that lends its aromas from at least three different Aroma Categories. Furthermore, it is a CB that has a flavour component i.e. it does not simply taste watery). 
+
+At a later stage, it might also be possible to model a Flavour-Driven CB as a CB with balanced flavour components: i.e.: alcohol levels, sugar levels and acidity are iin harmony. </Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Class URI="&wwww;FlavourDrivenCB"/>
+    </Declaration>
+    <SubClassOf>
+        <Class URI="&wwww;FlintyAroma"/>
+        <Class URI="&wwww;MineralAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;FloralAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;FreshAndFruityCB"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;FreshCB"/>
+            <Class URI="&wwww;FruityCB"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;FreshAndFruityCB"/>
+        <Class URI="&wwww;FruityCB"/>
+    </SubClassOf>
+    <Declaration>
+        <Class URI="&wwww;FreshAndFruityCB"/>
+    </Declaration>
+    <SubClassOf>
+        <Class URI="&wwww;FreshAppleAroma"/>
+        <Class URI="&wwww;StoneFruitAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;FreshAppleAroma"/>
+        <Class URI="&wwww;FreshApricotAroma"/>
+        <Class URI="&wwww;FreshNectarineAroma"/>
+        <Class URI="&wwww;FreshPeachAroma"/>
+        <Class URI="&wwww;FreshPearAroma"/>
+        <Class URI="&wwww;FreshQuinceAroma"/>
+        <Class URI="&wwww;FreshWhitePeachAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;FreshApricotAroma"/>
+        <Class URI="&wwww;StoneFruitAroma"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;FreshCB"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;CheninBlanc"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasBody"/>
+                <ObjectUnionOf>
+                    <Class URI="&wwww;Light-bodied"/>
+                    <Class URI="&wwww;Medium-bodied"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasSugarContent"/>
+                <ObjectUnionOf>
+                    <Class URI="&wwww;DrySugarContent"/>
+                    <Class URI="&wwww;OffDrySugarContent"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasTasteType"/>
+                <Class URI="&wwww;GoodAcidicTaste"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <DisjointClasses>
+        <Class URI="&wwww;FreshCB"/>
+        <Class URI="&wwww;RichCB"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class URI="&wwww;FreshCB"/>
+        <Class URI="&wwww;SweetCB"/>
+    </DisjointClasses>
+    <EntityAnnotation>
+        <Class URI="&wwww;FreshCB"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >&#39;Fresh&#39; refers to a specific texture of CB. A Fresh CB is one that has a light to medium body with a low-medium sugar content and a good acidity.</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <SubClassOf>
+        <Class URI="&wwww;FreshNectarineAroma"/>
+        <Class URI="&wwww;StoneFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;FreshPeachAroma"/>
+        <Class URI="&wwww;StoneFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;FreshPearAroma"/>
+        <Class URI="&wwww;StoneFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;FreshQuinceAroma"/>
+        <Class URI="&wwww;StoneFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;FreshWhitePeachAroma"/>
+        <Class URI="&wwww;StoneFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;FruitSaladAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;FruityCB"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;CheninBlanc"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <ObjectUnionOf>
+                    <Class URI="&wwww;CitrusAroma"/>
+                    <Class URI="&wwww;FloralAroma"/>
+                    <Class URI="&wwww;FreshVegetativeAroma"/>
+                    <Class URI="&wwww;StoneFruitAroma"/>
+                    <Class URI="&wwww;TropicalFruitAroma"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <ObjectUnionOf>
+                    <Class URI="&wwww;CitrusAroma"/>
+                    <Class URI="&wwww;FloralAroma"/>
+                    <Class URI="&wwww;FreshVegetativeAroma"/>
+                    <Class URI="&wwww;StoneFruitAroma"/>
+                    <Class URI="&wwww;TropicalFruitAroma"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EntityAnnotation>
+        <Class URI="&wwww;FruityCB"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >&#39;Fruity&#39; refers to the aromas the arise on the nose. If a few (less than 3) fruity aromas arise prominently, then a CB is fruity.</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Class URI="&wwww;FruityCB"/>
+    </Declaration>
+    <SubClassOf>
+        <Class URI="&wwww;Full-bodied"/>
+        <Class URI="&wwww;Body"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;Full-bodied"/>
+        <Class URI="&wwww;Light-bodied"/>
+        <Class URI="&wwww;Medium-bodied"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;GingerAroma"/>
+        <Class URI="&wwww;SpicyAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;GoodAcidicTaste"/>
+        <Class URI="&wwww;TasteAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;GranadillaAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;GrapeAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;GrapefruitAroma"/>
+        <Class URI="&wwww;CitrusAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;GrapefruitAroma"/>
+        <Class URI="&wwww;LemonAroma"/>
+        <Class URI="&wwww;LimeAroma"/>
+        <Class URI="&wwww;OrangeAroma"/>
+        <Class URI="&wwww;TangerineAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;GrassAroma"/>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;GreenPepperAroma"/>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;GuavaAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;HarshMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;HayAroma"/>
+        <Class URI="&wwww;DriedVegetativeAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;HazelnutAroma"/>
+        <Class URI="&wwww;NuttyAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;HerbaceousAroma"/>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;HerbalAroma"/>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;HighTanninLevels"/>
+        <Class URI="&wwww;TanninLevelValuePartition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;HighTanninLevels"/>
+        <Class URI="&wwww;LowTanninLevels"/>
+        <Class URI="&wwww;MediumTanninLevels"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;HoneyAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;HoneySuckleAroma"/>
+        <Class URI="&wwww;FloralAroma"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;Hue"/>
+        <ObjectUnionOf>
+            <Class URI="&wwww;YellowGoldHue"/>
+            <Class URI="&wwww;YellowGreenHue"/>
+            <Class URI="&wwww;YellowOrangeHue"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;Hue"/>
+        <Class URI="&wwww;VisualAttributes"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;Hue"/>
+        <Class URI="&wwww;Intensity"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;InsipidMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;IntegratedMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;Intensity"/>
+        <ObjectUnionOf>
+            <Class URI="&wwww;DarkIntensity"/>
+            <Class URI="&wwww;PaleIntensity"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;Intensity"/>
+        <Class URI="&wwww;VisualAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;KarooScrubAroma"/>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;KiwiAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;LanolinAroma"/>
+        <Class URI="&wwww;NaturalSubstanceAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;LeavesAroma"/>
+        <Class URI="&wwww;FreshVegetativeAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;LemonAroma"/>
+        <Class URI="&wwww;CitrusAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;LemonPepperAroma"/>
+        <Class URI="&wwww;SpicyAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;Light-bodied"/>
+        <Class URI="&wwww;Body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;LimeAroma"/>
+        <Class URI="&wwww;CitrusAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;LitchiAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;LowTanninLevels"/>
+        <Class URI="&wwww;TanninLevelValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;MarmaladeAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;MarzipanAroma"/>
+        <Class URI="&wwww;NuttyAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;Medium-bodied"/>
+        <Class URI="&wwww;Body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;MediumTanninLevels"/>
+        <Class URI="&wwww;TanninLevelValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;MelonAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;MildlyViscose"/>
+        <Class URI="&wwww;ViscosityValuePartition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;MildlyViscose"/>
+        <Class URI="&wwww;NotViscose"/>
+        <Class URI="&wwww;VeryViscose"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;MineralAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;MixedNutsAroma"/>
+        <Class URI="&wwww;NuttyAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;MouthCoat"/>
+        <Class URI="&wwww;TactileAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+        <Class URI="&wwww;SensoryAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;NaturalSubstanceAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;NeutralMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;NotViscose"/>
+        <Class URI="&wwww;ViscosityValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;NuttyAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;OakAroma"/>
+        <Class URI="&wwww;WoodAroma"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;OakAroma"/>
+        <Class URI="&wwww;SmokeyAroma"/>
+        <Class URI="&wwww;ThatchAroma"/>
+        <Class URI="&wwww;ToastAroma"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;OatmealAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;OffDrySugarContent"/>
+        <Class URI="&wwww;SugarContentValuePartition"/>
+    </SubClassOf>
+    <EntityAnnotation>
+        <Class URI="&wwww;OffDrySugarContent"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >Between 5g/l and 9g/l residual sugar. (Defined by Chenin Blanc Association)</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <SubClassOf>
+        <Class URI="&wwww;OliveOilCoat"/>
+        <Class URI="&wwww;MouthCoat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;OrangeAroma"/>
+        <Class URI="&wwww;CitrusAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;OrangeBlossomAroma"/>
+        <Class URI="&wwww;FloralAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;PaleIntensity"/>
+        <Class URI="&wwww;Intensity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;ParchingAstringency"/>
+        <Class URI="&wwww;Astringency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;ParticulateChalkTexture"/>
+        <Class URI="&wwww;ParticulateSurfaceTexture"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;ParticulateChalkTexture"/>
+        <Class URI="&wwww;ParticulateGrainyTexture"/>
+        <Class URI="&wwww;ParticulatePlasterTexture"/>
+        <Class URI="&wwww;ParticulateTalcTexture"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;ParticulateGrainyTexture"/>
+        <Class URI="&wwww;ParticulateSurfaceTexture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;ParticulatePlasterTexture"/>
+        <Class URI="&wwww;ParticulateSurfaceTexture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;ParticulateSurfaceTexture"/>
+        <Class URI="&wwww;SurfaceTexture"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;ParticulateSurfaceTexture"/>
+        <Class URI="&wwww;RoughSurfaceTexture"/>
+        <Class URI="&wwww;SmoothSurfaceTexture"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;ParticulateTalcTexture"/>
+        <Class URI="&wwww;ParticulateSurfaceTexture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;PassionFruitAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;PeachAroma"/>
+        <Class URI="&wwww;DriedFruitsAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;PineappleAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;QuinceAroma"/>
+        <Class URI="&wwww;BakedFruitAroma"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;RichAndRipeCB"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;RichCB"/>
+            <Class URI="&wwww;RipeCB"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&wwww;RichAndRipeCB"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&wwww;RichAndRipeSweet"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;RichAndRipeCB"/>
+            <Class URI="&wwww;SweetCB"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&wwww;RichAndRipeSweet"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&wwww;RichAndRipeWoodedCB"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;RichAndRipeCB"/>
+            <Class URI="&wwww;WoodedCB"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&wwww;RichAndRipeWoodedCB"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&wwww;RichCB"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;CheninBlanc"/>
+            <ObjectUnionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;BakedFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;CitrusAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;BakedFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;TropicalFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;CitrusAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;DriedFruitsAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;StoneFruitAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;DriedFruitsAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;StoneFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;TropicalFruitAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;StoneFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <Class URI="&wwww;TropicalFruitAroma"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                        <ObjectUnionOf>
+                            <Class URI="&wwww;BakedFruitAroma"/>
+                            <Class URI="&wwww;CitrusAroma"/>
+                            <Class URI="&wwww;DriedFruitsAroma"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasBody"/>
+                <ObjectUnionOf>
+                    <Class URI="&wwww;Full-bodied"/>
+                    <Class URI="&wwww;Medium-bodied"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EntityAnnotation>
+        <Class URI="&wwww;RichCB"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >A rich CB is a multi-dimensional CB. It is multi-dimensional in aromas -- at least 3 aromas from  specific categories come forward. For a CB to be classified as &#39;Rich&#39;, at least 3 aromas from the following respective categories should be present: BakedFruitAroma, DriedFruitsAroma, CitrusAroma, StoneFruitAroma or TropicalFruitAroma  
+
+It is also multi-dimensional in texture -- it is medium or full-bodied</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Class URI="&wwww;RichCB"/>
+    </Declaration>
+    <SubClassOf>
+        <Class URI="&wwww;RichMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;RipeCB"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;CheninBlanc"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <ObjectUnionOf>
+                    <Class URI="&wwww;BakedFruitAroma"/>
+                    <Class URI="&wwww;DriedFruitsAroma"/>
+                    <Class URI="&wwww;DriedVegetativeAroma"/>
+                    <Class URI="&wwww;StoneFruitAroma"/>
+                    <Class URI="&wwww;SweetAssociatedAroma"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EntityAnnotation>
+        <Class URI="&wwww;RipeCB"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >When a specifc CB is &#39;Ripe&#39; it means that aromas such as baked fruit aromas, dried fruit aromas, dried vegetative aromas, stone fruit aromas or sweet associated aromas are picked up on the nose.</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Class URI="&wwww;RipeCB"/>
+    </Declaration>
+    <SubClassOf>
+        <Class URI="&wwww;RoughEmeryTexture"/>
+        <Class URI="&wwww;RoughSurfaceTexture"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;RoughEmeryTexture"/>
+        <Class URI="&wwww;RoughSharpTexture"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;RoughSharpTexture"/>
+        <Class URI="&wwww;RoughSurfaceTexture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;RoughSurfaceTexture"/>
+        <Class URI="&wwww;SurfaceTexture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;RoundMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SavouryTaste"/>
+        <Class URI="&wwww;TasteAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SensoryAttributes"/>
+        <Class URI="&owl;Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SmokeyAroma"/>
+        <Class URI="&wwww;WoodAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SmoothChamoisTexture"/>
+        <Class URI="&wwww;SmoothSurfaceTexture"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;SmoothChamoisTexture"/>
+        <Class URI="&wwww;SmoothSatinTexture"/>
+        <Class URI="&wwww;SmoothSilkTexture"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;SmoothSatinTexture"/>
+        <Class URI="&wwww;SmoothSurfaceTexture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SmoothSilkTexture"/>
+        <Class URI="&wwww;SmoothSurfaceTexture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SmoothSurfaceTexture"/>
+        <Class URI="&wwww;SurfaceTexture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SpicyAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SteelyAroma"/>
+        <Class URI="&wwww;MineralAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;StewedFruitAroma"/>
+        <Class URI="&wwww;BakedFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;StoneFruitAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;StonyAroma"/>
+        <Class URI="&wwww;MineralAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;StrawAroma"/>
+        <Class URI="&wwww;DriedVegetativeAroma"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;SugarContentValuePartition"/>
+        <ObjectUnionOf>
+            <Class URI="&wwww;DrySugarContent"/>
+            <Class URI="&wwww;OffDrySugarContent"/>
+            <Class URI="&wwww;SweetSugarContent"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;SugarContentValuePartition"/>
+        <Class URI="&wwww;TasteAttributes"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;SugarContentValuePartition"/>
+        <Class URI="&wwww;TanninLevelValuePartition"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;SunflowerOilCoat"/>
+        <Class URI="&wwww;MouthCoat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SuppleMouthfeel"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SurfaceTexture"/>
+        <Class URI="&wwww;TactileAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;SweetCB"/>
+        <ObjectIntersectionOf>
+            <Class URI="&wwww;CheninBlanc"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasSugarContent"/>
+                <Class URI="&wwww;SweetSugarContent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;SweetCB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasBody"/>
+            <Class URI="&wwww;Full-bodied"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;SweetCB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasIntensity"/>
+            <Class URI="&wwww;DarkIntensity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <EntityAnnotation>
+        <Class URI="&wwww;SweetCB"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >a Sweet Chenin blanc necessarily has a Sweet (and not dry/off-dry sugar content). Additionally, if a wine is sweet, it necessarily has a full body and a dark intensity.</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <SubClassOf>
+        <Class URI="&wwww;SweetSugarContent"/>
+        <Class URI="&wwww;SugarContentValuePartition"/>
+    </SubClassOf>
+    <EntityAnnotation>
+        <Class URI="&wwww;SweetSugarContent"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >More than 30g/l residual sugar content</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <SubClassOf>
+        <Class URI="&wwww;SweetTaste"/>
+        <Class URI="&wwww;TasteAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;TactileAttributes"/>
+        <Class URI="&wwww;SensoryAttributes"/>
+    </SubClassOf>
+    <EntityAnnotation>
+        <Class URI="&wwww;TactileAttributes"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >Based on the mouthfeel wheel by Pickering and Demiglio</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <SubClassOf>
+        <Class URI="&wwww;TangerineAroma"/>
+        <Class URI="&wwww;CitrusAroma"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;TanninLevelValuePartition"/>
+        <ObjectUnionOf>
+            <Class URI="&wwww;HighTanninLevels"/>
+            <Class URI="&wwww;LowTanninLevels"/>
+            <Class URI="&wwww;MediumTanninLevels"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;TanninLevelValuePartition"/>
+        <Class URI="&wwww;TasteAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;TasteAttributes"/>
+        <Class URI="&wwww;SensoryAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;ThatchAroma"/>
+        <Class URI="&wwww;WoodAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;ToastAroma"/>
+        <Class URI="&wwww;WoodAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;VanillaAroma"/>
+        <Class URI="&wwww;SweetAssociatedAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;VeryViscose"/>
+        <Class URI="&wwww;ViscosityValuePartition"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;ViscosityValuePartition"/>
+        <ObjectUnionOf>
+            <Class URI="&wwww;MildlyViscose"/>
+            <Class URI="&wwww;NotViscose"/>
+            <Class URI="&wwww;VeryViscose"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;ViscosityValuePartition"/>
+        <Class URI="&wwww;TactileAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;VisualAttributes"/>
+        <Class URI="&wwww;SensoryAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;WatermelonAroma"/>
+        <Class URI="&wwww;TropicalFruitAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;WaxyAroma"/>
+        <Class URI="&wwww;NaturalSubstanceAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;WetWoolAroma"/>
+        <Class URI="&wwww;NaturalSubstanceAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;WildFlowerAroma"/>
+        <Class URI="&wwww;FloralAroma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;WoodAroma"/>
+        <Class URI="&wwww;AromaAttributes"/>
+    </SubClassOf>
+    <EquivalentClasses>
+        <Class URI="&wwww;WoodedCB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <ObjectUnionOf>
+                <Class URI="&wwww;NuttyAroma"/>
+                <Class URI="&wwww;SpicyAroma"/>
+                <Class URI="&wwww;WoodAroma"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&wwww;WoodedCB"/>
+        <Class URI="&wwww;CheninBlanc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;WoodedCB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasBody"/>
+            <ObjectUnionOf>
+                <Class URI="&wwww;Full-bodied"/>
+                <Class URI="&wwww;Medium-bodied"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <EntityAnnotation>
+        <Class URI="&wwww;WoodedCB"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >Whenever a Chenin Blanc has a Nutty, Spicy or Woody aroma, it is necessarily wooded. As part of its definition, a wooded CB has a medium or full body. </Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Class URI="&wwww;WoodedCB"/>
+    </Declaration>
+    <SubClassOf>
+        <Class URI="&wwww;YellowGoldHue"/>
+        <Class URI="&wwww;Hue"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class URI="&wwww;YellowGoldHue"/>
+        <Class URI="&wwww;YellowGreenHue"/>
+        <Class URI="&wwww;YellowOrangeHue"/>
+    </DisjointClasses>
+    <SubClassOf>
+        <Class URI="&wwww;YellowGreenHue"/>
+        <Class URI="&wwww;Hue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class URI="&wwww;YellowOrangeHue"/>
+        <Class URI="&wwww;Hue"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+        <ObjectProperty URI="&wwww;hasSensoryAttribute"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+        <Class URI="&wwww;CheninBlanc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+        <Class URI="&wwww;SensoryAttributes"/>
+    </ObjectPropertyRange>
+    <EntityAnnotation>
+        <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >https://bosmanwines.com/product/optenhorst-chenin-blanc-2013/</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasBody"/>
+        <ObjectProperty URI="&wwww;hasTactileAttribute"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty URI="&wwww;hasBody"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasBody"/>
+        <Class URI="&wwww;Body"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasHue"/>
+        <ObjectProperty URI="&wwww;hasVisualAttribute"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty URI="&wwww;hasHue"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasHue"/>
+        <Class URI="&wwww;Hue"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasIntensity"/>
+        <ObjectProperty URI="&wwww;hasVisualAttribute"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty URI="&wwww;hasIntensity"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasIntensity"/>
+        <Class URI="&wwww;Intensity"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasMouthfeelAttribute"/>
+        <ObjectProperty URI="&wwww;hasSensoryAttribute"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&wwww;hasMouthfeelAttribute"/>
+        <Class URI="&wwww;CheninBlanc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasMouthfeelAttribute"/>
+        <Class URI="&wwww;MouthfeelAttributes"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&wwww;hasMouthfeelAttribute"/>
+    </Declaration>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&wwww;hasSensoryAttribute"/>
+        <Class URI="&wwww;CheninBlanc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasSensoryAttribute"/>
+        <Class URI="&wwww;SensoryAttributes"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasSugarContent"/>
+        <ObjectProperty URI="&wwww;hasTasteAttribute"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty URI="&wwww;hasSugarContent"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasSugarContent"/>
+        <Class URI="&wwww;SugarContentValuePartition"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasSurfaceTexture"/>
+        <ObjectProperty URI="&wwww;hasTactileAttribute"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasSurfaceTexture"/>
+        <Class URI="&wwww;SurfaceTexture"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasTactileAttribute"/>
+        <ObjectProperty URI="&wwww;hasSensoryAttribute"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&wwww;hasTactileAttribute"/>
+        <Class URI="&wwww;CheninBlanc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasTactileAttribute"/>
+        <Class URI="&wwww;TactileAttributes"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasTanninLevel"/>
+        <ObjectProperty URI="&wwww;hasTasteAttribute"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty URI="&wwww;hasTanninLevel"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasTanninLevel"/>
+        <Class URI="&wwww;TanninLevelValuePartition"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasTasteAttribute"/>
+        <ObjectProperty URI="&wwww;hasSensoryAttribute"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&wwww;hasTasteAttribute"/>
+        <Class URI="&wwww;CheninBlanc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasTasteAttribute"/>
+        <Class URI="&wwww;TasteAttributes"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasTasteType"/>
+        <ObjectProperty URI="&wwww;hasTasteAttribute"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&wwww;hasVisualAttribute"/>
+        <ObjectProperty URI="&wwww;hasSensoryAttribute"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&wwww;hasVisualAttribute"/>
+        <Class URI="&wwww;CheninBlanc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&wwww;hasVisualAttribute"/>
+        <Class URI="&wwww;VisualAttributes"/>
+    </ObjectPropertyRange>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;CitrusAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;FlintyAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;MelonAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;StoneFruitAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasBody"/>
+                <Class URI="&wwww;Full-bodied"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasHue"/>
+                <Class URI="&wwww;YellowGoldHue"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasIntensity"/>
+                <Class URI="&wwww;DarkIntensity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasSugarContent"/>
+                <Class URI="&wwww;DrySugarContent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasSurfaceTexture"/>
+                <Class URI="&wwww;SmoothSurfaceTexture"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasTasteType"/>
+                <Class URI="&wwww;CB_grapeTaste"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasTasteType"/>
+                <Class URI="&wwww;SavouryTaste"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty URI="&wwww;hasSurfaceTexture"/>
+                <Class URI="&wwww;SmoothSurfaceTexture"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <Individual URI="&wwww;AntonijRupertWyne2015CB_Etiquette"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;AntonijRupertWyne2015CB_Etiquette"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >Basie van Lill of Arbeidsend and Jozua Visser of Oudam have owned and worked these vineyards for decades. The vines share space with fynbos and Rooibos tea bushes while sheep also graze the land. Planted in 1964, the vines are on either red sand or clay on the Skurfberg mountain, surrounded by fynbos. The area&#39;s height above sea level, naturally low rainfall and treasury of old vines that don&#39;t have the benefit of irrigation results in intense and balanced wines. The hot days are tempered by refreshing cool nights due to the land&#39;s proximity to the Atlantic Ocean (Lamberts Bay). All of these factors, along with the age and balance of these bush vines, contribute to ripeness, intense fruit and wines with a high natural acidity.
+
+Vibrant nose of nectarine, stone fruit and melon with a vague hint of flint. There&#39;s more of the same on the palate which is taut but showing lively, fresh arpicot, peach and melon flavours. The acidity makes for a juicy mouthful. Lovely palate weight and texture. Good grip and a long, satisfying aftertaste.</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;FreshPearAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;GrassAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;GuavaAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;MelonAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasBody"/>
+                <Class URI="&wwww;Light-bodied"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasHue"/>
+                <Class URI="&wwww;YellowGreenHue"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasIntensity"/>
+                <Class URI="&wwww;PaleIntensity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasSugarContent"/>
+                <Class URI="&wwww;DrySugarContent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasTasteType"/>
+                <Class URI="&wwww;GoodAcidicTaste"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Individual URI="&wwww;BabylonstorenCB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;CitrusAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BeaumontHopeMarguerite2015CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;FreshPearAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BeaumontHopeMarguerite2015CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;StoneFruitAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BeaumontHopeMarguerite2015CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasBody"/>
+            <Class URI="&wwww;Full-bodied"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BeaumontHopeMarguerite2015CB_Etiquette"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;BeaumontHopeMarguerite2015CB_Etiquette"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >http://winemag.co.za/beaumont-hope-marguerite-chenin-blanc-2015/
+http://www.winecellar.co.za/beaumont-hope-marguerite-2015.html</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;LemonAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BellinghamBernardSeries2015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;LimeAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BellinghamBernardSeries2015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;OakAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BellinghamBernardSeries2015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;SpicyAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BellinghamBernardSeries2015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;TropicalFruitAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BellinghamBernardSeries2015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasBody"/>
+            <Class URI="&wwww;Medium-bodied"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BellinghamBernardSeries2015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasSugarContent"/>
+            <Class URI="&wwww;DrySugarContent"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BellinghamBernardSeries2015"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;BellinghamBernardSeries2015"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >https://www.majestic.co.uk/Bellingham-The-Bernard-Series-Old-Vine-Chenin-Blanc-zid20165</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Individual URI="&wwww;BellinghamBernardSeries2015"/>
+    </Declaration>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;ButterscotchAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BosmanOptenhorst2013CB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;HoneyAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BosmanOptenhorst2013CB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasSugarContent"/>
+            <Class URI="&wwww;OffDrySugarContent"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BosmanOptenhorst2013CB"/>
+    </ClassAssertion>
+    <Declaration>
+        <Individual URI="&wwww;BosmanOptenhorst2013CB"/>
+    </Declaration>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;CitrusAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BotanicaMaryDeLaney2014CB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;GrapefruitAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BotanicaMaryDeLaney2014CB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;MineralAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BotanicaMaryDeLaney2014CB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;WoodAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;BotanicaMaryDeLaney2014CB"/>
+    </ClassAssertion>
+    <Declaration>
+        <Individual URI="&wwww;BotanicaMaryDeLaney2014CB"/>
+    </Declaration>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;OakAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;CS_Test_Wooded"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;CS_Test_Wooded"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >To test: add:
+&quot;hasBody some Light-bodied&quot;</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Individual URI="&wwww;CS_Test_Wooded"/>
+    </Declaration>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;BakedAppleAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;CaramelAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;DriedApricotAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;GrapefruitAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;GuavaAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;LemonAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;MineralAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;OakAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;OrangeBlossomAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;StewedFruitAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;ToastAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;VanillaAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasTasteType"/>
+            <Class URI="&wwww;GoodAcidicTaste"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </ClassAssertion>
+    <Declaration>
+        <Individual URI="&wwww;DeMorgenZon_Experts"/>
+    </Declaration>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;CitrusAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DelaireGraff2013CB_Ettiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;FreshPeachAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DelaireGraff2013CB_Ettiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;NaturalSubstanceAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DelaireGraff2013CB_Ettiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;PineappleAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DelaireGraff2013CB_Ettiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasTasteType"/>
+            <Class URI="&wwww;SavouryTaste"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;DelaireGraff2013CB_Ettiquette"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;DelaireGraff2013CB_Ettiquette"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >http://www.delaire.co.za/site/wp-content/uploads/2014/09/Delaire-Graff-Old-Bush-Vine-Chenin-Blanc-2013.pdf
+
+http://www.jancisrobinson.com/articles/delaire-graff-wooded-chenin-blanc-2013-swartland-</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Individual URI="&wwww;DelaireGraff2013CB_Ettiquette"/>
+    </Declaration>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;AlmondAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;HoneySuckleAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;MelonAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;PeachAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;PineappleAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;SpicyAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasBody"/>
+                <Class URI="&wwww;Full-bodied"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasHue"/>
+                <Class URI="&wwww;YellowGoldHue"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasIntensity"/>
+                <Class URI="&wwww;DarkIntensity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasSugarContent"/>
+                <Class URI="&wwww;DrySugarContent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasSurfaceTexture"/>
+                <Class URI="&wwww;SmoothSurfaceTexture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Individual URI="&wwww;GrahamBeckBowedHeadCB_Etiquette"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;GrahamBeckBowedHeadCB_Etiquette"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >Broad and appealing with concentrated whiffs of apricot and white peaches, preserved quince, honeysuckle and ripe pineapple flavours on the nose. A full and creamy palate with layers of ripe tropical fruit and delicate hints of spice and almonds complemented by a long clean and crisp citrus aftertaste.
+
+http://www.wine.co.za/wine/wine.aspx?WINEID=32166</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;CitrusAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;ElderFlowerAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;HerbaceousAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;LimeAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;MelonAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;OakAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasBody"/>
+                <Class URI="&wwww;Full-bodied"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasHue"/>
+                <Class URI="&wwww;YellowGoldHue"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasIntensity"/>
+                <Class URI="&wwww;DarkIntensity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasSugarContent"/>
+                <Class URI="&wwww;DrySugarContent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Individual URI="&wwww;KleineZalze2014CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;BeeswaxAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasBushVine2014CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;PeachAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasBushVine2014CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasBody"/>
+            <Class URI="&wwww;Medium-bodied"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasBushVine2014CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasHue"/>
+            <Class URI="&wwww;YellowGoldHue"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasBushVine2014CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasIntensity"/>
+            <Class URI="&wwww;DarkIntensity"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasBushVine2014CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasSugarContent"/>
+            <Class URI="&wwww;DrySugarContent"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasBushVine2014CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasTasteType"/>
+            <Class URI="&wwww;GoodAcidicTaste"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasBushVine2014CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;AlmondAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasHoumoed2013CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;FloralAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasHoumoed2013CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;FreshPeachAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasHoumoed2013CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;HoneyAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasHoumoed2013CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasBody"/>
+            <Class URI="&wwww;Medium-bodied"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasHoumoed2013CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasHue"/>
+            <Class URI="&wwww;YellowGoldHue"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasHoumoed2013CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasIntensity"/>
+            <Class URI="&wwww;DarkIntensity"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasHoumoed2013CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasSugarContent"/>
+            <Class URI="&wwww;DrySugarContent"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MooiplaasHoumoed2013CB_Etiquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;ButterscotchAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;GuavaAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;HerbalAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;PineappleAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;SmokeyAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasBody"/>
+            <Class URI="&wwww;Medium-bodied"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasHue"/>
+            <Class URI="&wwww;YellowGoldHue"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasIntensity"/>
+            <Class URI="&wwww;DarkIntensity"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasSugarContent"/>
+            <Class URI="&wwww;DrySugarContent"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;MountAboraKoggelbos2013CB_Review"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >http://www.themorningclaret.com/2016/mount-abora-koggelbos-2013/</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;FreshPearAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;GranadillaAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;LimeAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;OrangeBlossomAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;PineappleAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;QuinceAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;SpicyAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasSugarContent"/>
+            <Class URI="&wwww;DrySugarContent"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasTasteType"/>
+            <Class URI="&wwww;GoodAcidicTaste"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >http://www.raats.co.za/Wine.aspx?WINEID=35965&amp;CLIENTID=4646
+
+Doesn&#39;t fall underneath &#39;Fruit-Driven&quot; because it does not state that it has a savoury taste</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Individual URI="&wwww;RaatsOldVine2013CB_Website"/>
+    </Declaration>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;HayAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RuderaDeTradisie2013CB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+            <Class URI="&wwww;OakAroma"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RuderaDeTradisie2013CB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&wwww;hasBody"/>
+            <Class URI="&wwww;Medium-bodied"/>
+        </ObjectSomeValuesFrom>
+        <Individual URI="&wwww;RuderaDeTradisie2013CB"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;RuderaDeTradisie2013CB"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >https://www.wineofthemonth.co.za/white-wine-chenin-blanc/975-rudera-de-tradisie-chenin-blanc-2011</Constant>
+        </Annotation>
+    </EntityAnnotation>
+    <Declaration>
+        <Individual URI="&wwww;RuderaDeTradisie2013CB"/>
+    </Declaration>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;AlmondAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;FreshAppleAroma"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasAromaAttribute"/>
+                <Class URI="&wwww;GoodAcidicTaste"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasSugarContent"/>
+                <Class URI="&wwww;DrySugarContent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty URI="&wwww;hasTasteType"/>
+                <Class URI="&wwww;GoodAcidicTaste"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Individual URI="&wwww;SadieFamilyWinesSkrufberg2014CB_Etiquette"/>
+    </ClassAssertion>
+    <EntityAnnotation>
+        <Individual URI="&wwww;SadieFamilyWinesSkrufberg2014CB_Etiquette"/>
+        <Annotation annotationURI="&rdfs;comment">
+            <Constant
+                >100% Chenin Blanc planted in the 1950s in the Skurfberg mountains in the Olifants River region. Treelike vines are aptly named &#8216;B&#244;me&#8217;. The fresh sweetness of Granny Smith apples with an undertone of hot slate just after the rain. Slightly shy and understated, it comes into its own on the palate, displaying vivid, fresh fruit, crunchy acidity and a subtle almond finish. Enticing and mysterious, I look forward to seeing how it will transform over the years. Ageing potential: 5-15 years. (2011 vintage &#8211; Wine Advocate 93 points)
+
+http://winecellarplus.co.za/2013/07/19/sas-most-sought-after-wines-sadie-old-vine-series/</Constant>
+        </Annotation>
+    </EntityAnnotation>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+
